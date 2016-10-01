@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bghall"
+    tools:context="tk.lucassalinas.tanglebrain.Grid_levels">
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:id="@+id/grid_view"
+        android:numColumns="3"
+        android:verticalSpacing="20dp"
+        android:gravity="center"
+        android:layout_marginTop="50sp"></GridView>
+
+    <ImageView
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:src="@drawable/hall"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20sp"
+        android:onClick="clickHall"
+        android:id="@+id/halloffame"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/prueba"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/grid_view"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GridImage</string>
+    <string name="title_activity_image_full_screen">ImageFullScreen</string>
+</resources>

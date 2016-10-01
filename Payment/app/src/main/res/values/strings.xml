@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Payment</string>
+    <string-array name="creditCards">
+        <item>Discover</item>
+        <item>Master Card</item>
+        <item>Visa</item>
+        <item>American Express</item>
+    </string-array>
+</resources>

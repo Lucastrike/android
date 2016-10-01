@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.lucas.addsubtract.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/back_calc"
+        android:alpha="0.1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert first value:"
+        android:layout_marginLeft="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/first"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert second value:"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:id="@+id/second"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="16dp"/>
+
+    <!-- <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:id="@+id/radioG">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:id="@+id/add"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBTRACT"
+            android:id="@+id/subtract"/>
+    </RadioGroup> -->
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/calculate"
+        android:layout_marginTop="70dp"
+        android:id="@+id/spin"
+        android:layout_marginLeft="16dp">
+    </Spinner>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULATE"
+        android:background="#9BC9F0"
+        android:onClick="clickCalculate"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="16dp"/>
+
+    <!-- <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBTRACT"
+        android:id="@+id/subtract"
+        android:onClick="clickSubtract"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="100dp" /> -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:layout_marginTop="250dp"
+        android:textSize="30dp"
+        android:textColor="#1BB90D"
+        android:layout_marginLeft="16dp" />
+</RelativeLayout>

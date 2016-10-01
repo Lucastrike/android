@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="250sp"
+        android:layout_height="170sp"
+        android:background="#33b5e5"
+        android:text="CONGRATULATIONS!!!\n You are a master!\n Enjoy the good life 'boats and bitches'"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:id="@+id/intro"
+        android:padding="10sp"/>
+    <ImageView
+        android:layout_width="70sp"
+        android:layout_height="60sp"
+        android:src="@drawable/youtubebutton"
+        android:layout_marginLeft="90sp"
+        android:layout_marginTop="105sp"/>
+
+</RelativeLayout>

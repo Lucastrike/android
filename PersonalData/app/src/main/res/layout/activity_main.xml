@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    tools:context="com.example.lucas.personaldata.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="17dp"
+        android:text="Personal data"
+        android:background="#c1c1a4"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:textColor="#fff"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="7dp"
+        android:id="@+id/name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age:"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <Spinner
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/age"
+        android:layout_marginTop="20dp"
+        android:id="@+id/age"
+        android:background="#fff">
+    </Spinner>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/student"
+            android:text="Student"
+            android:textSize="20dp"
+            android:background="#262626"
+            android:textColor="#fff"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:background="#262626"
+            android:id="@+id/sexGroup">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Woman"
+                android:textColor="#fff"
+                android:id="@+id/woman"
+                android:textSize="20dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Man"
+                android:textColor="#fff"
+                android:id="@+id/man"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"/>
+        </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:layout_marginStart="87dp"
+            android:id="@+id/send"
+            android:onClick="onClickSend"
+            android:textColor="#006600"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Erase"
+            android:id="@+id/erase"
+            android:onClick="onClickErase"
+            android:textColor="#cc0000"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/send"
+            android:layout_marginStart="10dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

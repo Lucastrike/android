@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AddSubtract</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="calculate">
+        <item>Add</item>
+        <item>Subtract</item>
+        <item>Multiply</item>
+        <item>Divide</item>
+    </string-array>
+
+</resources>
