@@ -25,6 +25,10 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayAdapter planetList = new ArrayAdapter<String>(this, R.layout.simplerow, ABC);
         lv.setAdapter(planetList);
+        
+        //                                                   Use android libraries to do not create a custom xml
+        //ArrayAdapter planetsGrid = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, planets);
+        //grid.setAdapter(planetsGrid);
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
